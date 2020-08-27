@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="css/materialize.min.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <link rel="manifest" href="manifest.json" />
+    <!-- ios support -->
+    <link rel="apple-touch-icon" href="images/icons/icon-192x192.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#43a047" />
+    <meta name="theme-color" content="#43a047" />
+
+    <style>
+        #app {
+            padding-top: 2em;
+        }
+    </style>
+</head>
+
+<body onload="getStream()">
+
+
+    <div class="navbar-fixed ">
+        <nav>
+            <div class="nav-wrapper blue">
+                <a href="#" class="brand-logo center">Camera</a>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <video autoplay style="height: 60%; width: 100%;"></video>
+        <a style="position: relative; left: 10px; top: 90%;" class="btn-floating btn-large waves-effect waves-light red" onclick="takePhoto()"><i class="material-icons">camera_alt</i></a>
+        <p><img id="imageTag" width="300" height="200"></p>
+    </div>
+
+
+
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="js/materialize.min.js"></script>
+    <script src="js/quagga.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/instalar.js"></script>
+
+
+    </div>
+
+</body>
+
+</html>
